@@ -23,7 +23,7 @@ public class Scanner {
     private static Logger logger = Logger.getLogger("Scanner");
     // 使用多线程扫描
     private static ThreadPoolExecutor poolExecutor = new ThreadPoolExecutor(10,20,1000,
-            TimeUnit.MILLISECONDS, new LinkedBlockingQueue<Runnable>(10000),
+            TimeUnit.MILLISECONDS, new LinkedBlockingQueue<>(10000),
             Executors.defaultThreadFactory(),new ThreadPoolExecutor.AbortPolicy());
 
     /**
