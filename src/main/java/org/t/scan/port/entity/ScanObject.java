@@ -12,6 +12,8 @@ public class ScanObject {
     private String service;
     private Boolean isOpen;
     private String banner;
+    private String name;
+    private String value;
     // 存放服务指纹和服务的对应关系 banner -> service
     private static Map<String,String> bannerMaps = new HashMap<>();
     // 存放常见端口与服务的对应关系 port -> service
